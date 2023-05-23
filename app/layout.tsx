@@ -17,7 +17,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        {/* <MobileMenu /> */}
+        <MobileMenu />
         <div>
           {children}
         </div>
