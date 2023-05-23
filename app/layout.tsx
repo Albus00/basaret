@@ -1,7 +1,6 @@
 import Header from '@/components/Header'
 import './globals.css'
 import Footer from '@/components/Footer'
-import MobileMenu from '@/components/MobileMenu'
 
 export const metadata = {
   title: 'Create Next App',
@@ -17,7 +16,6 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Header />
-        <MobileMenu />
         <div>
           {children}
         </div>

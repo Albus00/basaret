@@ -114,6 +114,7 @@ export default function Home() {
       </div>
 
       {/* Sponsors */}
+      {/* TODO: Fix ICA logo on mobile */}
       <div className="
       flex justify-evenly items-center py-20 px-32
       handheld:px-20 handheld:flex-col handheld:space-y-10

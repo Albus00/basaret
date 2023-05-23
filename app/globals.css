@@ -39,12 +39,12 @@ body {
   @apply bg-background text-blackText font-proxima font-medium;
 }
 
-.menu_item:after {
+.menu_item_effect:after {
   transform: scaleX(0);  
   transition: transform 250ms ease-in-out;
   transform-origin:  0% 50%; 
 }
-.menu_item:hover:after {
+.menu_item_effect:hover:after {
   transform: scaleX(1);
 }
 

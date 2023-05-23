@@ -1,42 +1,48 @@
-import React from 'react'
-import { BrowserView, MobileView } from 'react-device-detect'
+'use client';
+
+import React, { useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/24/solid'
 
-import MenuItem from './MenuItem'
 import Image from 'next/image'
+import useMediaQuery from '@/hooks/useMediaQuery'
+import DesktopMenu from './Menus/DesktopMenu';
+import MobileMenu from './Menus/MobileMenu';
+import Link from 'next/link';
 
 const Header = () => {
+
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
+
+  const isMobile = useMediaQuery('(max-width: 1024px)')
   const LiU = "/images/logos/liu.png"
 
   return (
     <div className="h-20 p-4 flex justify-between">
       <div>
-        <Image
-          src={LiU}
-          width={200}
-          height={100}
-          alt="LiU logga"
-        />
+        <Link href={'/'}>
+          <Image
+            src={LiU}
+            width={200}
+            height={100}
+            alt="LiU logga"
+          />
+        </Link>
+
       </div>
       {/* Render navigation menu based on which device website is viewed on */}
-      <BrowserView className="flex flex-row flex-wrap justify-end content-end space-x-10">
-        <MenuItem
-          title={"Aktivitetsschema"}
-          redirect={"aktivitet"}
-        />
-        <MenuItem
-          title={"Schema Basår"}
-          redirect={"https://cloud.timeedit.net/liu/web/schema/ri167XQQ597Z50Qm37070gZ6y5Y7700Q6Y93Y7.html"}
-        />
-        <MenuItem
-          title={"Nolleboken"}
-          redirect={"nolleboken"}
-        />
-      </BrowserView>
-      <MobileView>
-        {/* <Bars3Icon className='w-14 h-14' onClick={() => props.menuOnClick()} /> */}
-      </MobileView>
-    </div>
+      {!isMobile ?
+        (
+          <DesktopMenu />
+        ) : (
+          <div>
+            <Bars3Icon className='w-14 h-14 self-end' onClick={() => setMenuIsOpen(true)} />
+            <MobileMenu menuIsOpen={menuIsOpen} setMenuIsOpen={setMenuIsOpen} />
+          </div>
+        )
+      }
+
+
+    </div >
   )
 }
 
