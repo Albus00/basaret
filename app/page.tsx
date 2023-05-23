@@ -1,113 +1,127 @@
-import Image from 'next/image'
+import React from 'react';
+
+import TextButton from '../components/Buttons/TextButton'
+import InstagramButton from '../components/Buttons/InstagramButton'
+import ContactCard from '../components/ContactCard'
+import Sponsor from '../components/Sponsor'
+import Image from 'next/image';
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
+    <div>
+      <Image src={'/images/group.jpg'}
+        width={2000}
+        height={549}
+        alt="Basårsfaddrar"
+      />
+      <h1 className='
+      py-6
+      mobile:text-3xl mobile:px-8
+      '>
+        Välkommen Nollan!
+      </h1>
+      {/* First paragraph */}
+      <div className='
+      text-left pb-10 px-52 flex flex-col 
+      handheld:px-32
+      mobile:px-10
+      '>
+        <p className='
+        text-xl text-justify pb-2
+        mobile:text-lg
+        thin:text-base
+        '>
+          På denna sida hittar Nollan information om vad som händer under första veckan på Linköpings Universitet, den så kallade ”Nolle-veckan”.
+          Nolle-veckan består av både undervisning och roliga aktiviteter där alla Basårsnollan får chans att lära känna varandra. Aktiviteterna är såklart
+          frivilliga, men vi hoppas att du vill vara med på så mycket som möjligt, Nollan!
+          <br /><br />
+          Viktigt att veta är att Linköpings Universitet tar kraftigt avstånd från förnedrande och kränkande nollningar som Nollan kanske hört talas om. Syftet
+          med denna vecka är att ge Nollan en rolig start på basåret och en introduktion till livet som universitetsstudent! Vi som kommer att ta hand om dig
+          under denna roliga period är en frisk blandning av studenter från olika tekniska utbildningar här på Campus Norrköping. För att se till så att du får
+          en så bra start på studentlivet som möjligt kommer vi faddrar att vägleda dig genom din första vecka av studier och roliga aktiviteter.
+          <br /><br />
+          Det ska bli kul att ses!
         </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+        <TextButton
+          title="Glöm inte att fylla i nolle-enkäten!"
+          url="https://docs.google.com/forms/d/e/1FAIpQLSfZDkA28xAoCHObyb-qLweAkRcDjCUlYVQLFcFU-TnLo2p8tg/viewform" />
+        <InstagramButton
+          title1="Följ oss på Instagram"
+          title2="&nbsp;för fler uppdateringar!" // Non breaking space had to be used because regular space was ignored by HTML
+          url="https://www.instagram.com/basaret_norrkoping/" />
+      </div>
+
+      {/* Klassföreståndare */}
+      <div className='py-10'>
+        <h2 className='
+        pb-8
+        handheld:text-6xl
+        mobile:text-4xl
+        thin:text-2xl
+        '>Klassföreståndare</h2>
+        <div className='
+        flex justify-center 
+        handheld:flex-col handheld:space-y-24
+        '>
+          <ContactCard
+            name='Thomas Bui'
+            phone='070-428 97 55'
+            email='thobu687@student.liu.se'
+            program='Elektronikdesign'
+            img_src='/images/thomas.jpg' />
+          <ContactCard
+            name='Amanda Hult'
+            phone='072-749 18 00'
+            email='amahu396@student.liu.se'
+            program='Medieteknik'
+            img_src='/images/amanda.jpg' />
         </div>
       </div>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      {/* Huvudklassfaddrar */}
+      <div className='pt-10'>
+        <h2 className='
+        pb-8
+        handheld:text-6xl
+        mobile:text-4xl
+        thin:text-2xl
+      '>
+          Huvudklassfaddrar
+        </h2>
+        <div className='
+        flex justify-center 
+        handheld:flex-col handheld:space-y-24
+        '>
+          <ContactCard
+            name='Liv Halldén'
+            phone='072-176 51 02'
+            email='livha714@student.liu.se'
+            program='Grafisk Design och Kommunikation'
+            img_src='/images/liv.jpg' />
+          <ContactCard
+            name='Johanna Eklundh'
+            phone='072-302 99 10'
+            email='johek392@student.liu.se'
+            program='Medieteknik'
+            img_src='/images/johanna.jpg' />
+          <ContactCard
+            name='Victor Svensson'
+            phone='070-330 00 13'
+            email='vikpe022@student.liu.se'
+            program='Medieteknik'
+            img_src='/images/victor.jpg' />
+        </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+      {/* Sponsors */}
+      <div className="
+      flex justify-evenly items-center py-20 px-32
+      handheld:px-20 handheld:flex-col handheld:space-y-10
+      mobile:px-8      
+      ">
+        <Sponsor company="ICA" img_src='/images/sponsors/ica.png' width={200} height={200} />
+        <Sponsor company="Voyado" img_src='/images/sponsors/voyado.png' width={500} height={200} />
       </div>
-    </main>
+    </div>
   )
 }

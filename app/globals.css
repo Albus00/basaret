@@ -2,6 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import fonts */
+@import url("https://use.typekit.net/lbq6byf.css");
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@300;400&family=Source+Sans+Pro:ital@0;1&display=swap'); */
+
+@layer base {
+  h1 {
+    @apply font-futura font-medium text-5xl text-center;
+  }
+  h2 {
+    @apply font-futura text-5xl text-center;
+  }
+  h3 {
+    @apply font-futura text-3xl my-4;
+  }
+  img {
+    @apply aspect-auto;
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -17,11 +36,23 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  @apply bg-background text-blackText font-proxima font-medium;
+}
+
+.menu_item:after {
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+  transform-origin:  0% 50%; 
+}
+.menu_item:hover:after {
+  transform: scaleX(1);
+}
+
+.styled_button {
+  background:conic-gradient(
+  from 90.89deg at -10% 100%, 
+  rgba(245, 42, 178, 0.88) -0.78deg, 
+  #FFBF00 12.37deg, 
+  rgba(245, 42, 178, 0.88) 350.22deg, 
+  #FFBF00 370.37deg);
 }
