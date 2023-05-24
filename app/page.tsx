@@ -9,11 +9,13 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div>
-      <Image src={'/images/group.jpg'}
-        width={2000}
-        height={549}
-        alt="Basårsfaddrar"
-      />
+      <div className='h-[28rem] relative'>
+        <Image src={'/images/group.jpg'}
+          fill
+          alt="Basårsfaddrar"
+          className='object-contain'
+        />
+      </div>
       <h1 className='
       py-6
       mobile:text-3xl mobile:px-8
@@ -54,13 +56,13 @@ export default function Home() {
       {/* Klassföreståndare */}
       <div className='py-10'>
         <h2 className='
-        pb-8
+        pb-8 
         handheld:text-6xl
         mobile:text-4xl
         thin:text-2xl
         '>Klassföreståndare</h2>
         <div className='
-        flex justify-center 
+        flex justify-center space-x-5 
         handheld:flex-col handheld:space-y-24
         '>
           <ContactCard
@@ -81,7 +83,7 @@ export default function Home() {
       {/* Huvudklassfaddrar */}
       <div className='pt-10'>
         <h2 className='
-        pb-8
+        pb-8 
         handheld:text-6xl
         mobile:text-4xl
         thin:text-2xl
@@ -89,7 +91,7 @@ export default function Home() {
           Huvudklassfaddrar
         </h2>
         <div className='
-        flex justify-center 
+        flex justify-center space-x-5 
         handheld:flex-col handheld:space-y-24
         '>
           <ContactCard
@@ -120,8 +122,8 @@ export default function Home() {
       handheld:px-20 handheld:flex-col handheld:space-y-10
       mobile:px-8      
       ">
-        <Sponsor company="ICA" img_src='/images/sponsors/ica.png' width={200} height={200} />
-        <Sponsor company="Voyado" img_src='/images/sponsors/voyado.png' width={500} height={200} />
+        <Sponsor company="ICA" img_src='/images/sponsors/ica.png' className="grow-1" />
+        <Sponsor company="Voyado" img_src='/images/sponsors/voyado.png' className="grow-2" />
       </div>
     </div>
   )

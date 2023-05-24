@@ -16,18 +16,20 @@ const ContactCard = (props: Props) => {
 
   return (
     <div className="
-      w-96 px-8 text-center 
+      w-96 h-screen text-center
       handheld:w-screen handheld:px-36
       mobile:px-8
       ">
-      <Image
-        src={props.img_src}
-        width={2048}
-        height={1365}
-        alt={props.name}
-        className="
-          border border-solid border-blackText rounded-3xl
+      <div className='w-full h-[36rem] relative'>
+        <Image
+          src={props.img_src}
+          fill
+          alt={props.name}
+          className="
+          border border-solid border-blackText rounded-3xl object-cover
         " />
+      </div>
+
       <h3 className="
         handheld:text-6xl handheld:py-5
         mobile:spacing-400 mobile:break-normal

@@ -4,28 +4,29 @@ import React from 'react'
 type Props = {
   company: string
   img_src: string
-  width: number
-  height: number
+  className: string
 }
 
 const Sponsor = (props: Props) => {
   return (
-    <div className="
-      px-8
-      handheld:px-0
-      ">
+    <div className={
+      props.className +
+      " h-36 relative" +
+      "handheld:px-0"
+    }>
       <Image
         src={props.img_src}
-        width={props.width}
-        height={props.height}
+        fill
         alt={props.company}
         className="
-        h-full
-        handheld:max-h-44
-        mobile:max-h-32
+          object-contain
         " />
     </div>
   )
 }
+
+// h-full
+// handheld:max-h-44
+// mobile:max-h-32
 
 export default Sponsor
