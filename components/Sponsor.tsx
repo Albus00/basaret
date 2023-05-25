@@ -11,8 +11,8 @@ const Sponsor = (props: Props) => {
   return (
     <div className={
       props.className +
-      " h-36 relative" +
-      "handheld:px-0"
+      " relative" +
+      " handheld:px-0"
     }>
       <Image
         src={props.img_src}

@@ -62,7 +62,7 @@ export default function Home() {
         thin:text-2xl
         '>Klassföreståndare</h2>
         <div className='
-        flex justify-center space-x-5 
+        flex justify-center space-x-10 
         handheld:flex-col handheld:space-y-24
         '>
           <ContactCard
@@ -91,7 +91,7 @@ export default function Home() {
           Huvudklassfaddrar
         </h2>
         <div className='
-        flex justify-center space-x-5 
+        flex justify-center space-x-10 
         handheld:flex-col handheld:space-y-24
         '>
           <ContactCard
@@ -106,24 +106,18 @@ export default function Home() {
             email='johek392@student.liu.se'
             program='Medieteknik'
             img_src='/images/johanna.jpg' />
-          <ContactCard
-            name='Victor Svensson'
-            phone='070-330 00 13'
-            email='vikpe022@student.liu.se'
-            program='Medieteknik'
-            img_src='/images/victor.jpg' />
         </div>
       </div>
 
       {/* Sponsors */}
       {/* TODO: Fix ICA logo on mobile */}
       <div className="
-      flex justify-evenly items-center py-20 px-32
+      flex justify-evenly items-center w-full py-20 px-32
       handheld:px-20 handheld:flex-col handheld:space-y-10
       mobile:px-8      
       ">
-        <Sponsor company="ICA" img_src='/images/sponsors/ica.png' className="grow-1" />
-        <Sponsor company="Voyado" img_src='/images/sponsors/voyado.png' className="grow-2" />
+        <Sponsor company="ICA" img_src='/images/sponsors/ica.png' className="grow-1 h-48 w-1/3" />
+        <Sponsor company="Voyado" img_src='/images/sponsors/voyado.png' className="grow-1 h-48 w-2/3" />
       </div>
     </div>
   )

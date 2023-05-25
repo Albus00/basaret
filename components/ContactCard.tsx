@@ -17,10 +17,10 @@ const ContactCard = (props: Props) => {
   return (
     <div className="
       w-96 h-screen text-center
-      handheld:w-screen handheld:px-36
+      handheld:w-full handheld:px-36
       mobile:px-8
       ">
-      <div className='w-full h-[36rem] relative'>
+      <div className='w-full h-3/4 relative'>
         <Image
           src={props.img_src}
           fill
