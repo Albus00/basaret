@@ -11,10 +11,15 @@
     @apply font-futura font-medium text-5xl text-center;
   }
   h2 {
-    @apply font-futura text-5xl text-center;
+    @apply font-futura text-5xl text-center pb-8 
+    handheld:text-5xl
+    thin:text-2xl;
   }
   h3 {
-    @apply font-futura text-3xl my-4;
+    @apply font-futura text-4xl my-4 
+    handheld:my-0 handheld:text-4xl handheld:py-5
+    mobile:break-normal
+    thin:text-3xl;
   }
   img {
     @apply aspect-auto;

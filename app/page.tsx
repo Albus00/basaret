@@ -9,13 +9,12 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div>
-      <div className='h-[28rem] relative'>
-        <Image src={'/images/group.jpg'}
-          fill
-          alt="Basårsfaddrar"
-          className='object-contain'
-        />
-      </div>
+      <Image src={'/images/group-desktop.jpg'}
+        width={2500}
+        height={782}
+        alt="Basårsfaddrar"
+        className='object-contain'
+      />
       <h1 className='
       py-6
       mobile:text-3xl mobile:px-8
@@ -55,57 +54,41 @@ export default function Home() {
 
       {/* Klassföreståndare */}
       <div className='py-10'>
-        <h2 className='
-        pb-8 
-        handheld:text-6xl
-        mobile:text-4xl
-        thin:text-2xl
-        '>Klassföreståndare</h2>
+        <h2>Klassföreståndare</h2>
         <div className='
-        flex justify-center space-x-10 
+        flex justify-center
         handheld:flex-col handheld:space-y-24
         '>
           <ContactCard
-            name='Thomas Bui'
-            phone='070-428 97 55'
-            email='thobu687@student.liu.se'
-            program='Elektronikdesign'
-            img_src='/images/thomas.jpg' />
+            name='Josephine Zettervall'
+            phone='ÄNDRA'
+            email='ÄNDRA'
+            program='Medieteknik' />
           <ContactCard
             name='Amanda Hult'
             phone='072-749 18 00'
             email='amahu396@student.liu.se'
-            program='Medieteknik'
-            img_src='/images/amanda.jpg' />
+            program='Medieteknik' />
         </div>
       </div>
 
       {/* Huvudklassfaddrar */}
       <div className='pt-10'>
-        <h2 className='
-        pb-8 
-        handheld:text-6xl
-        mobile:text-4xl
-        thin:text-2xl
-      '>
-          Huvudklassfaddrar
-        </h2>
+        <h2>Huvudklassfaddrar</h2>
         <div className='
-        flex justify-center space-x-10 
+        flex justify-center
         handheld:flex-col handheld:space-y-24
         '>
           <ContactCard
-            name='Liv Halldén'
-            phone='072-176 51 02'
-            email='livha714@student.liu.se'
-            program='Grafisk Design och Kommunikation'
-            img_src='/images/liv.jpg' />
+            name='Gustav Kronholm'
+            phone='072-399 40 07'
+            email='guskr150@student.liu.se'
+            program='Medieteknik' />
           <ContactCard
-            name='Johanna Eklundh'
-            phone='072-302 99 10'
-            email='johek392@student.liu.se'
-            program='Medieteknik'
-            img_src='/images/johanna.jpg' />
+            name='Albin Kjellberg'
+            phone='072-246 68 12'
+            email='albkj604@student.liu.se'
+            program='Medieteknik' />
         </div>
       </div>
 

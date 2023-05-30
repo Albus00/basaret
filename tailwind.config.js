@@ -12,12 +12,13 @@ module.exports = {
         'proxima': ['proxima-nova', 'sans-serif']
       },
       colors: {
-        background: '#FAFAFA',
-        accent: '#EFE9D6',
+        background: '#eceae1',
+        accent: '#e9b86b',
         blackText: '#030302',
         whiteText: '#E3E3E3',
         footer: '#2D2D2D'
 
+        // Nolleboken färger
         // #eceae1
         // #528e62
         // #e9b86b
@@ -26,7 +27,7 @@ module.exports = {
     },
     screens: {
       handheld: { 'max': '1024px' },
-      mobile: { 'max': '640px' },
+      mobile: { 'max': '810px' },
       thin: { 'max': '340px' }
     },
   },

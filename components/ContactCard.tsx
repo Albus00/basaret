@@ -7,22 +7,22 @@ type Props = {
   phone: string
   email: string
   program: string
-  img_src: string
 }
 
 const ContactCard = (props: Props) => {
   // Styling for icons placed as const, for easier modification
   const iconStyling = "h-4 w-4 mr-2 handheld:h-7 handheld:w-7 mobile:h-6 mobile:w-6";
+  const img_src = "/images/" + props.name.split(" ")[0].toLowerCase() + ".jpg";
 
   return (
     <div className="
-      w-96 h-screen text-center
-      handheld:w-full handheld:px-36
+      h-screen text-center pb-10 px-5
+      handheld:px-36 handheld:h-screen
       mobile:px-8
       ">
-      <div className='w-full h-3/4 relative'>
+      <div className='aspect-[5/7] h-3/4 relative m-auto handheld:aspect-auto'>
         <Image
-          src={props.img_src}
+          src={img_src}
           fill
           alt={props.name}
           className="
@@ -30,17 +30,10 @@ const ContactCard = (props: Props) => {
         " />
       </div>
 
-      <h3 className="
-        handheld:text-6xl handheld:py-5
-        mobile:spacing-400 mobile:break-normal
-        thin:text-3xl
-        ">
-        {props.name}
-      </h3>
+      <h3>{props.name}</h3>
       <div className="
-        flex flex-col text-m
-        handheld:text-3xl
-        mobile:text-2xl
+        flex flex-col text-xl
+        handheld:text-2xl
         thin:text-xl
         ">
         <div className="flex justify-center items-center">
