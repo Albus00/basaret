@@ -1,7 +1,7 @@
-export default function Aktivitet() {
+export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      Nolleboken
+    <main className="min-h-full">
+      <iframe className="h-screen" width="100%" height="100%" src="./nollebok_utkast.pdf" />
     </main>
   )
 }

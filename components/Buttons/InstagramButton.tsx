@@ -13,15 +13,15 @@ const TextButton = (props: Props) => {
 
   return (
     <a href={props.url} className="mobile:self-center">
-      <button className={defaultStyle + " " + hoverStyle + " styled_button flex text-whiteText items-center"} >
+      <button className={defaultStyle + " " + hoverStyle + " pr-3 styled_button flex text-whiteText items-center"} >
         <div>
           {props.title1}
           <span className="mobile:hidden">{props.title2}</span>
         </div>
         <Image
           src={logo}
-          width={34}
-          height={34}
+          width={40}
+          height={40}
           alt="instagram logo"
           className="pl-3 mobile:h-6" />
       </button>

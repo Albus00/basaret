@@ -13,6 +13,7 @@
   h2 {
     @apply font-futura text-5xl text-center pb-8 
     handheld:text-5xl
+    mobile:text-4xl
     thin:text-2xl;
   }
   h3 {

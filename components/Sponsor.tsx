@@ -3,11 +3,12 @@ import React from 'react'
 
 type Props = {
   company: string
-  img_src: string
   className: string
 }
 
 const Sponsor = (props: Props) => {
+  const img_src = "/images/sponsors/" + props.company.toLowerCase() + ".png";
+
   return (
     <div className={
       props.className +
@@ -15,7 +16,7 @@ const Sponsor = (props: Props) => {
       " handheld:px-0"
     }>
       <Image
-        src={props.img_src}
+        src={img_src}
         fill
         alt={props.company}
         className="

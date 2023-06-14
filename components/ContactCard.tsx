@@ -18,9 +18,9 @@ const ContactCard = (props: Props) => {
     <div className="
       h-screen text-center pb-10 px-5
       handheld:px-36 handheld:h-screen
-      mobile:px-8
+      mobile:px-0 mobile:h-auto
       ">
-      <div className='aspect-[5/7] h-3/4 relative m-auto handheld:aspect-auto'>
+      <div className='aspect-[5/7] h-3/4 relative m-auto mobile:h-auto mobile:w-4/5'>
         <Image
           src={img_src}
           fill
@@ -42,7 +42,9 @@ const ContactCard = (props: Props) => {
         </div>
         <div className="flex justify-center items-center">
           <EnvelopeIcon className={iconStyling} />
-          {props.email}
+          <a href={"mailto:" + props.email}>
+            {props.email}
+          </a>
         </div>
         <div className="flex justify-center">
           {props.program}

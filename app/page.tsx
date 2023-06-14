@@ -6,7 +6,10 @@ import ContactCard from '../components/ContactCard'
 import Sponsor from '../components/Sponsor'
 import Image from 'next/image';
 
-export default function Home() {
+export default function Page() {
+  // Randomize the visibility for the sponsor logo that has only paid for the "slumpad" tier
+  const logoVisible = Math.random() < 0.5;
+
   return (
     <div>
       <Image src={'/images/group-desktop.jpg'}
@@ -95,12 +98,13 @@ export default function Home() {
       {/* Sponsors */}
       {/* TODO: Fix ICA logo on mobile */}
       <div className="
-      flex justify-evenly items-center w-full py-20 px-32
+      flex flex-wrap justify-evenly items-center w-full py-20 px-32
       handheld:px-20 handheld:flex-col handheld:space-y-10
       mobile:px-8      
       ">
-        <Sponsor company="ICA" img_src='/images/sponsors/ica.png' className="grow-1 h-48 w-1/3" />
-        <Sponsor company="Voyado" img_src='/images/sponsors/voyado.png' className="grow-1 h-48 w-2/3" />
+        <Sponsor company="ICA" className="grow-1 h-52 w-1/3 mobile:w-3/5" />
+        {logoVisible ? <Sponsor company="NAB" className="grow-1 h-48 w-1/3 mobile:w-3/5" /> : ""}
+        <Sponsor company="Micropower" className="grow-2 h-48 w-2/3 mobile:w-full" />
       </div>
     </div>
   )
