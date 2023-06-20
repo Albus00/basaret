@@ -15,11 +15,9 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className='w-full'>
+      <body className='w-full min-h-screen flex flex-col'>
         <Header />
-        <div>
-          {children}
-        </div>
+        {children}
         <Footer>
           @2023 Albin Kjellberg. Denna hemsida är byggd av studenter vid LiU
         </Footer>

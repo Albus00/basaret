@@ -20,10 +20,10 @@ const Header = () => {
   // Check the pathname to see if header should be included or not
   const pathname = usePathname();
   if (pathname == "/nolleboken")
-    return ("");
+    return null;
 
   return (
-    <div className="h-20 p-4 flex justify-between">
+    <header className="h-20 p-4 flex justify-between">
       <div>
         <Link href={'/'}>
           <Image
@@ -48,7 +48,7 @@ const Header = () => {
       }
 
 
-    </div >
+    </header >
   )
 }
 

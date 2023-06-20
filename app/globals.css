@@ -8,7 +8,8 @@
 
 @layer base {
   h1 {
-    @apply font-futura font-medium text-5xl text-center;
+    @apply font-futura font-medium text-5xl text-center
+    mobile:text-4xl;
   }
   h2 {
     @apply font-futura text-5xl text-center pb-8 
@@ -19,12 +20,10 @@
   h3 {
     @apply font-futura text-4xl my-4 
     handheld:my-0 handheld:py-5
-    mobile:break-normal
-    thin:text-3xl;
+    mobile:break-normal mobile:text-3xl;
   }
   h4 {
-    @apply font-proxima text-2xl mt-4 font-bold
-    handheld:my-0
+    @apply font-futura text-2xl mt-4 font-medium
     thin:text-xl;
   }
   img {

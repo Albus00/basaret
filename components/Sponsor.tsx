@@ -19,6 +19,7 @@ const Sponsor = (props: Props) => {
         src={img_src}
         fill
         alt={props.company}
+        sizes="50vw"
         className="
           object-contain
         " />

@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'futura': ['futura-pt-bold', 'sans-serif'],
+        'futura': ['futura-pt', 'sans-serif'],
         'proxima': ['proxima-nova', 'sans-serif']
       },
       colors: {

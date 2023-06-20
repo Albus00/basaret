@@ -11,17 +11,16 @@ export default function Page() {
   const logoVisible = Math.random() < 0.5;
 
   return (
-    <div>
+    <div className="flex-1">
       <Image src={'/images/group-desktop.jpg'}
         width={2500}
         height={782}
+        sizes="100vw"
+        priority
         alt="Basårsfaddrar"
         className='object-contain'
       />
-      <h1 className='
-      py-6
-      mobile:text-3xl mobile:px-8
-      '>
+      <h1 className='py-6'>
         Välkommen Nollan!
       </h1>
       {/* First paragraph */}

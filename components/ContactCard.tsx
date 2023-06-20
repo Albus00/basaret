@@ -25,6 +25,7 @@ const ContactCard = (props: Props) => {
           src={img_src}
           fill
           alt={props.name}
+          sizes="70vw"
           className="
           border border-solid border-blackText rounded-3xl object-cover
         " />
