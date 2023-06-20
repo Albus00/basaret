@@ -10,7 +10,7 @@ const TextButton = (props: Props) => {
 
   return (
     <a href={props.url} className="mobile:self-center">
-      <button className={"bg-accent " + defaultStyle + " " + hoverStyle}>
+      <button className={"bg-customYellow " + defaultStyle + " " + hoverStyle}>
         {props.title}
       </button>
     </a>

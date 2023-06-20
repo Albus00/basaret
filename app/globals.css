@@ -18,9 +18,14 @@
   }
   h3 {
     @apply font-futura text-4xl my-4 
-    handheld:my-0 handheld:text-4xl handheld:py-5
+    handheld:my-0 handheld:py-5
     mobile:break-normal
     thin:text-3xl;
+  }
+  h4 {
+    @apply font-proxima text-2xl mt-4 font-bold
+    handheld:my-0
+    thin:text-xl;
   }
   img {
     @apply aspect-auto;

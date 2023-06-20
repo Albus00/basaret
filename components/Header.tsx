@@ -8,6 +8,7 @@ import useMediaQuery from '@/hooks/useMediaQuery'
 import DesktopMenu from './Menus/DesktopMenu';
 import MobileMenu from './Menus/MobileMenu';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
 
@@ -15,6 +16,11 @@ const Header = () => {
 
   const isMobile = useMediaQuery('(max-width: 1024px)')
   const LiU = "/images/logos/liu.png"
+
+  // Check the pathname to see if header should be included or not
+  const pathname = usePathname();
+  if (pathname == "/nolleboken")
+    return ("");
 
   return (
     <div className="h-20 p-4 flex justify-between">

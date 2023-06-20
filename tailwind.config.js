@@ -13,10 +13,12 @@ module.exports = {
       },
       colors: {
         background: '#eceae1',
-        accent: '#e9b86b',
         blackText: '#030302',
         whiteText: '#E3E3E3',
-        footer: '#2D2D2D'
+        footer: '#2D2D2D',
+        customGreen: '#528e62',
+        customYellow: '#e9b86b',
+        customBlue: '#a4c9cb'
 
         // Nolleboken färger
         // #eceae1
