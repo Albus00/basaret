@@ -149,5 +149,5 @@ export const schedule = [
         description: "Nollan blir Ettan! Detta ska firas med lekar och lite häng!"
       }
     ]
-  },
+  }
 ]
