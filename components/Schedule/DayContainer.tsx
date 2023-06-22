@@ -24,7 +24,7 @@ function DayContainer(props: Props) {
   return (
     <div className='
       w-3/5 bg-background p-4 mb-5 min-h-[15rem] 
-      mobile:w-11/12 mobile:mx-3'>
+      mobile:w-11/12 mobile:mx-3 mobile:pb-8'>
       {/* Tailwind custom colors does not seem to work if they're not written out manually once on the website */}
       <div className='bg-customGreen'></div>
       <div className='bg-customBlue'></div>

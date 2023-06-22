@@ -24,7 +24,6 @@
   }
   h4 {
     @apply font-futura text-2xl font-medium
-    thin:text-xl;
   }
   h5 {
     @apply font-futura text-xl font-bold
