@@ -6,11 +6,15 @@ export const schedule = [
     activities: [
       {
         header: "Första lunchen",
+        time: "10:15-12:00",
+        location: "Hemklassrummen",
         alcohol: false,
         description: "Nollan bjuds på lunch, det finns också chans att pynta sin Nollekeps."
       },
       {
         header: "Campus-rundvandring",
+        time: "13:15-15:00",
+        location: "Campus",
         alcohol: false,
         description: "Nollan visas runt på campus av faddrar för att Nollan ska kunna hitta bättre samt få ansikte på studentfiket och Trappan."
       }
@@ -23,6 +27,8 @@ export const schedule = [
     activities: [
       {
         header: "Stadsvandring",
+        time: "10:00-12:00",
+        location: "Mellan husen",
         alcohol: false,
         description: "Nollan visas runt i stan för att få en bättre uppfattning av hur stan ser ut. Nollan kommer få träffa olika föreningar på vägen!"
       }
@@ -35,6 +41,8 @@ export const schedule = [
     activities: [
       {
         header: "Lekar i folkparken",
+        time: "10:00-17:00",
+        location: "Mellan husen",
         alcohol: false,
         description: "För Nollans sammanhållning och en lugn start på Nolleveckan. Häng, lekar och spel i parken."
       }
@@ -47,12 +55,16 @@ export const schedule = [
     activities: [
       {
         header: "Pluggstuga/Häng",
+        time: "15:15-17:00",
+        location: "Hemklassrum",
         alcohol: false,
         description: "Nollan kan få hjälp med sina studier och ställa frågor till erfarna faddrar. Även ett tillfälle för Nollan att ladda upp inför..."
       },
 
       {
         header: "Grillkväll på DK",
+        time: "18:00-22:00",
+        location: "DK",
         alcohol: true,
         description: "Korvgrillning på DK med trevligt sällskap, härlig musik och roliga lekar! Om Nollan vill får Nollan svänga sina lurviga. (Det betyder att dansa, Nollan)."
       }
@@ -65,11 +77,15 @@ export const schedule = [
     activities: [
       {
         header: "Lunch och sittningsinformation",
+        time: "12:15-13:00",
+        location: "TP2",
         alcohol: false,
         description: "Vi har en kort presentation om “hur man går på sittning” och säljer fler biljetter till sittningen och basårskampen."
       },
       {
         header: "Pluggstuga",
+        time: "15:15-17:00",
+        location: "Hemklassrum",
         alcohol: false,
         description: "Nollan kan få hjälp med sina studier och ställa frågor till erfarna faddrar"
       }
@@ -82,11 +98,15 @@ export const schedule = [
     activities: [
       {
         header: "Matlådans dag",
+        time: "12:15-13:00",
+        location: "Mellan husen",
         alcohol: false,
         description: "Nollan tar med sig en egen matlåda och äter den tillsammans med sin grupp i folkparken!"
       },
       {
         header: "Sektionspub",
+        time: "17:00-22:00",
+        location: "Trappan",
         alcohol: true,
         description: "Sektionerna kommer och berättar om sina olika program eftersom det är viktigt för Nollan att veta vilka möjligheter de har efter basåret!"
       }
@@ -99,6 +119,8 @@ export const schedule = [
     activities: [
       {
         header: "Pluggstuga och Norrköpingstips",
+        time: "15:15-17:00",
+        location: "Hemklassrum",
         alcohol: false,
         description: "Nollan kan få hjälp med sina studier, ställa frågor till erfarna faddrar och få tips om vad man kan hitta på i Norrköping!"
       }
@@ -111,6 +133,8 @@ export const schedule = [
     activities: [
       {
         header: "Basårskampen",
+        time: "18:00-20:00",
+        location: "Mellan husen",
         alcohol: true,
         description: "Vi delar upp Nollan i flera grupper och har en runda på Himpan (se ordlistan) med aktiviter, tävlingar och annat kul!"
       }
@@ -122,17 +146,23 @@ export const schedule = [
     color: "customBlue",
     activities: [
       {
+        time: "16:00-17:30",
         header: "Fördrink på DK",
+        location: "DK",
         alcohol: true,
         description: "Vi taggar till inför finsittningen tillsammans!"
       },
       {
         header: "Finsittning",
+        time: "18:00-22:00",
+        location: "Trappan",
         alcohol: true,
         description: "En klassisk sittning med underhållning i form av gyckel och lekar"
       },
       {
         header: "Trappanfest",
+        time: "23:00-03:00",
+        location: "Trappan",
         alcohol: true,
         description: "Nollan får chans att gå på sin första fest på Trappan!"
       }
@@ -145,6 +175,8 @@ export const schedule = [
     activities: [
       {
         header: "Ettans dag",
+        location: "Mellan husen",
+        time: "12:00-14:00",
         alcohol: false,
         description: "Nollan blir Ettan! Detta ska firas med lekar och lite häng!"
       }

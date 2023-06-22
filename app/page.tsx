@@ -61,6 +61,7 @@ export default function Page() {
         flex justify-center
         handheld:flex-col handheld:space-y-24
         '>
+          {/* TODO: Kontaktuppgifter */}
           <ContactCard
             name='Josephine Zettervall'
             phone='ÄNDRA'
