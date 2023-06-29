@@ -64,8 +64,8 @@ export default function Page() {
           {/* TODO: Kontaktuppgifter */}
           <ContactCard
             name='Josephine Zettervall'
-            phone='ÄNDRA'
-            email='ÄNDRA'
+            phone='TODO'
+            email='TODO'
             program='Medieteknik' />
           <ContactCard
             name='Amanda Hult'
