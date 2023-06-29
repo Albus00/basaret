@@ -35,7 +35,6 @@ export default function Page() {
             color={day.color}
             weekday={day.weekday}
             activities={day.activities}
-
           />
         );
       })}

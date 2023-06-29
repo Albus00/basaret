@@ -11,7 +11,7 @@ type Props = {
 
 const ContactCard = (props: Props) => {
   // Styling for icons placed as const, for easier modification
-  const iconStyling = "h-4 w-4 mr-2 handheld:h-7 handheld:w-7 mobile:h-6 mobile:w-6";
+  const iconStyling = "h-4 w-4 mr-2 handheld:h-7 handheld:w-7 mobile:h-4 mobile:w-4";
   const img_src = "/images/" + props.name.split(" ")[0].toLowerCase() + ".jpg";
 
   return (
@@ -19,6 +19,7 @@ const ContactCard = (props: Props) => {
       h-screen text-center pb-10 px-5
       handheld:px-36 handheld:h-auto
       mobile:px-0 mobile:mx-8
+      thin:mx-4
       ">
       <div className='aspect-[5/7] h-3/4 relative m-auto mobile:h-auto'>
         <Image
@@ -35,13 +36,13 @@ const ContactCard = (props: Props) => {
       <div className="
         flex flex-col text-xl
         handheld:text-2xl
-        thin:text-xl
+        thin:text-lg
         ">
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center thin:mb-2">
           <PhoneIcon className={iconStyling} />
           {props.phone}
         </div>
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center thin:mb-2">
           <EnvelopeIcon className={iconStyling} />
           <a href={"mailto:" + props.email}>
             {props.email}
