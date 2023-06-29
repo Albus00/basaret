@@ -24,7 +24,14 @@
   }
   h4 {
     @apply font-futura text-2xl font-medium
-    thin:text-xl;
+  }
+  h5 {
+    @apply font-futura text-xl font-bold
+    thin:text-lg;
+  }
+  h6 {
+    @apply font-futura text-lg font-bold
+    thin:text-base;
   }
   img {
     @apply aspect-auto;

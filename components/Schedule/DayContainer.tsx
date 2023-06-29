@@ -6,7 +6,7 @@ type Props = {
   date: string;
   weekday: string;
   color: string;
-  activities: { header: string, alcohol: boolean, description: string }[];
+  activities: { header: string, location: string, time: string, alcohol: boolean, description: string }[];
 }
 
 function DayContainer(props: Props) {
@@ -38,6 +38,8 @@ function DayContainer(props: Props) {
             <ActivityContainer
               key={activity.header}
               header={activity.header}
+              location={activity.location}
+              time={activity.time}
               alcohol={activity.alcohol}
               description={activity.description}
             />

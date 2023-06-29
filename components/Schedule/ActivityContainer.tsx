@@ -3,6 +3,8 @@ import Image from 'next/image'
 
 type Props = {
   header: string;
+  location: string;
+  time: string;
   alcohol: boolean;
   description: string;
 }
