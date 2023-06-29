@@ -13,7 +13,7 @@ module.exports = {
       fontFamily: {
         'futura': ['futura-pt', 'sans-serif'],
         'proxima': ['proxima-nova', 'sans-serif'],
-        'sans': ['proxima-nova', ...defaultTheme.fontFamily.sans] // Override mobile default font
+        'sans': ['proxima-nova', ...defaultTheme.fontFamily.sans] // TODO: Override mobile default font
       },
       colors: {
         background: '#eceae1',
