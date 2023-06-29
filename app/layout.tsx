@@ -2,6 +2,7 @@ import Header from '@/components/Header'
 import './globals.css'
 import Footer from '@/components/Footer'
 
+// TODO:Add favicon
 export const metadata = {
   title: 'Basåret',
   description: 'Hemsidan för Basåret på Linköpings Universitet, Campus Norrköping'
