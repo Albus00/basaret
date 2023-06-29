@@ -27,7 +27,7 @@ export default function Page() {
       <div className='
       text-left pb-10 px-52 flex flex-col 
       handheld:px-32
-      mobile:px-10
+      mobile:px-6
       '>
         <p className='
         text-xl text-justify pb-2
@@ -95,7 +95,6 @@ export default function Page() {
       </div>
 
       {/* Sponsors */}
-      {/* TODO: Fix ICA logo on mobile */}
       <div className="
       flex flex-wrap justify-evenly items-center w-full py-20 px-32
       handheld:px-20 handheld:flex-col handheld:space-y-10

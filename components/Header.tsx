@@ -53,6 +53,3 @@ const Header = () => {
 }
 
 export default Header
-
-//TODO: add soft shadow below
-//TODO: add routes to new pages (not created yet)

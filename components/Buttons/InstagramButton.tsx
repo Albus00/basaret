@@ -20,10 +20,11 @@ const TextButton = (props: Props) => {
         </div>
         <Image
           src={logo}
-          width={40}
-          height={40}
+          width={30}
+          height={30}
           alt="instagram logo"
-          className="pl-3 mobile:h-6" />
+          className="ml-3 
+          mobile:h-6 mobile:w-6" />
       </button>
     </a>
   )

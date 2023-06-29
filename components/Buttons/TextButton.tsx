@@ -9,7 +9,7 @@ type Props = {
 const TextButton = (props: Props) => {
 
   return (
-    <a href={props.url} className="mobile:self-center">
+    <a href={props.url} className="mobile:self-center thin:max-w-[12rem]">
       <button className={"bg-customYellow " + defaultStyle + " " + hoverStyle}>
         {props.title}
       </button>

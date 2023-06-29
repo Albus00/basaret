@@ -12,10 +12,10 @@
     mobile:text-4xl;
   }
   h2 {
-    @apply font-futura text-5xl text-center pb-8 
+    @apply font-futura text-5xl text-center pb-8
     handheld:text-5xl
     mobile:text-4xl
-    thin:text-2xl;
+    thin:text-3xl;
   }
   h3 {
     @apply font-futura text-4xl my-4 
@@ -23,7 +23,7 @@
     mobile:break-normal mobile:text-3xl;
   }
   h4 {
-    @apply font-futura text-2xl mt-4 font-medium
+    @apply font-futura text-2xl font-medium
     thin:text-xl;
   }
   img {

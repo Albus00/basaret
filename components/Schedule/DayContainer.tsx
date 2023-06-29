@@ -23,13 +23,13 @@ function DayContainer(props: Props) {
 
   return (
     <div className='
-      w-3/5 bg-background p-4 mb-5 min-h-[15rem] 
+      w-3/5 bg-background p-4 mb-5 min-h-[15rem] rounded-2xl 
       mobile:w-11/12 mobile:mx-3'>
       {/* Tailwind custom colors does not seem to work if they're not written out manually once on the website */}
-      <div className='bg-customGreen'></div>
-      <div className='bg-customBlue'></div>
+      {/* <div className='bg-customGreen'></div> */}
+      {/* <div className='bg-customBlue'></div> */}
       {/* --------------- TODO: Remove above ----------------- */}
-      <div className={"bg-" + props.color + " w-fit flex mobile:w-full"}>
+      <div className={"bg-" + props.color + " w-fit flex rounded-2xl mobile:w-full"}>
         <h3 className={'p-4 m-0 mobile:m-auto mobile:px-0'}>{props.weekday.toUpperCase() + " - " + props.date}</h3>
       </div>
       <div className='w-full'>
