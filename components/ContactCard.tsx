@@ -19,9 +19,9 @@ const ContactCard = (props: Props) => {
       h-screen text-center pb-10 px-5
       handheld:px-36 handheld:h-auto
       mobile:px-0 mobile:mx-8
-      thin:mx-4
+      thin:mx-0
       ">
-      <div className='aspect-[5/7] h-3/4 relative m-auto mobile:h-auto'>
+      <div className='aspect-[5/7] h-3/4 relative m-auto mobile:h-auto thin:mx-4'>
         <Image
           src={img_src}
           fill

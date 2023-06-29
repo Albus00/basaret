@@ -21,6 +21,7 @@ export default function Page() {
           height={40}
           alt="Alkoholfri"
           className='object-contain mobile:w-8'
+          priority
         />
         <p className="text-2xl mobile:text-lg"> &nbsp;= Alkoholfri aktivitet</p>
       </div>
