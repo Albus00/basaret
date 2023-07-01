@@ -24,8 +24,8 @@ const Header = () => {
     return null;
 
   return (
-    <header className="h-20 p-4 flex justify-between">
-      <div className='relative w-48 mobile:w-36' >
+    <header className="h-20 pb-4 flex justify-between">
+      <div className='relative ml-4 mt-4 w-48 mobile:w-36' >
         <Image
           src={LiU}
           fill
@@ -41,7 +41,7 @@ const Header = () => {
           <DesktopMenu />
         ) : (
           <div>
-            <Bars3Icon className='w-14 h-14 self-end' onClick={() => setMenuIsOpen(true)} />
+            <Bars3Icon className='w-14 h-14 m-4 self-end' onClick={() => setMenuIsOpen(true)} />
             <MobileMenu menuIsOpen={menuIsOpen} setMenuIsOpen={setMenuIsOpen} />
           </div>
         )

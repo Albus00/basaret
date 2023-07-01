@@ -10,8 +10,7 @@ type Props = {
 }
 
 function ActivityContainer(props: Props) {
-  const time = props.time.split(',');
-  console.log(time.length);
+  const time = props.time.split(','); // If multiple timestamps (eg. group A and B) then split them and place them in different headings
 
   return (
     <div className='pl-10 mt-4 pb-2 mobile:pl-4'>
