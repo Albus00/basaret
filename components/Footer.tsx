@@ -20,7 +20,7 @@ const Footer = (props: Props) => {
   return (
     <footer className="
       bg-footer text-whiteText text-center py-2 italic
-      thin:text-sm
+      mobile:text-sm
       ">
       {/* If on mobile, make the text into two rows */}
       {text[0]}<br className="hidden mobile:block" />{text[1]}
