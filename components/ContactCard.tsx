@@ -37,11 +37,11 @@ const ContactCard = (props: Props) => {
         handheld:text-2xl
         thin:text-lg
         ">
-        <div className="flex justify-center items-center thin:mb-2">
+        <div className="flex justify-center items-center">
           <PhoneIcon className={iconStyling} />
           {props.phone}
         </div>
-        <div className="flex justify-center items-center thin:mb-2">
+        <div className="flex justify-center items-center">
           <EnvelopeIcon className={iconStyling} />
           <a href={"mailto:" + props.email}>
             {props.email}

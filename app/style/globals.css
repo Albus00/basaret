@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import fonts */
-@import url("https://use.typekit.net/lbq6byf.css");
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@300;400&family=Source+Sans+Pro:ital@0;1&display=swap'); */
-
 @layer base {
   h1 {
     @apply font-futura font-medium text-5xl text-center
@@ -23,14 +19,14 @@
     mobile:break-normal mobile:text-3xl;
   }
   h4 {
-    @apply font-futura text-2xl font-medium
+    @apply font-futura text-3xl font-medium
   }
   h5 {
-    @apply font-futura text-xl font-bold
+    @apply font-futura text-xl
     thin:text-lg;
   }
   h6 {
-    @apply font-futura text-lg font-bold
+    @apply font-futura text-lg leading-5
     thin:text-base;
   }
   img {
@@ -53,7 +49,7 @@
 }
 
 body {
-  @apply bg-background text-blackText font-sans font-medium;
+  @apply bg-background text-blackText font-sans font-normal;
 }
 
 .menu_item_effect:after {

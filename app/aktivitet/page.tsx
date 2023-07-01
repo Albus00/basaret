@@ -20,7 +20,7 @@ export default function Page() {
           width={40}
           height={40}
           alt="Alkoholfri"
-          className='object-contain mobile:w-8'
+          className='object-contain mobile:w-8 thin:w-7'
           priority
         />
         <p className="text-2xl mobile:text-lg"> &nbsp;= Alkoholfri aktivitet</p>
