@@ -22,6 +22,7 @@ function ActivityContainer(props: Props) {
       <div className='flex items-center' >
         <h4>{props.header}</h4>
         {!props.alcohol ? (
+          // TODO: Fix alcohol icon placement
           <Image
             src={'/images/misc/alcohol.png'}
             width={24}
