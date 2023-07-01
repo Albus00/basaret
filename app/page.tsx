@@ -61,11 +61,10 @@ export default function Page() {
         flex justify-center
         handheld:flex-col handheld:space-y-24
         '>
-          {/* TODO: Kontaktuppgifter */}
           <ContactCard
             name='Josephine Zettervall'
-            phone='TODO'
-            email='TODO'
+            phone='0725286711'
+            email='josze195@student.liu.se'
             program='Medieteknik' />
           <ContactCard
             name='Amanda Hult'
