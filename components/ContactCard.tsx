@@ -35,7 +35,7 @@ const ContactCard = (props: Props) => {
       <div className="
         flex flex-col text-xl
         handheld:text-2xl
-        thin:text-lg
+        mobile:text-lg
         ">
         <div className="flex justify-center items-center">
           <PhoneIcon className={iconStyling} />
