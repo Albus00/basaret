@@ -82,7 +82,7 @@ export default function Page() {
         handheld:flex-col handheld:space-y-24
         '>
           <ContactCard
-            name='Gustav Kronholm'
+            name='Gustaf Kronholm'
             phone='072-399 40 07'
             email='guskr150@student.liu.se'
             program='Medieteknik' />
