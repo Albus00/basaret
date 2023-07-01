@@ -14,7 +14,7 @@ function ActivityContainer(props: Props) {
   console.log(time.length);
 
   return (
-    <div className='pl-10 mt-4 mobile:pl-4'>
+    <div className='pl-10 mt-4 pb-2 mobile:pl-4'>
       {time.map((timeStamp) => (
         <h6 key={timeStamp}>{timeStamp}</h6>
       ))}
