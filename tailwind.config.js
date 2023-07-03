@@ -33,7 +33,7 @@ module.exports = {
     },
     screens: {
       handheld: { 'max': '1024px' },
-      mobile: { 'max': '790px' },
+      mobile: { 'max': '750px' },
       thin: { 'max': '340px' }
     },
   },
