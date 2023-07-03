@@ -1,15 +1,25 @@
+'use client'
+
 import Image from 'next/image'
-import React from 'react'
+import { useEffect, useState } from 'react'
 
 type Props = {
   company: string
   className: string
+  random: boolean
 }
 
 const Sponsor = (props: Props) => {
+  // Randomize the visibility for the sponsor logo that has only paid for the "slumpad" tier
+  // Because random numbers are used the client- and serverside will not match, so the number has to be placed in state and effect
+  const [logoVisibility, setLogoVisibility] = useState(true);
+  useEffect(() => {
+    setLogoVisibility(Math.random() < 0.5);
+  }, []);
+
   const img_src = "/images/sponsors/" + props.company.toLowerCase() + ".png";
 
-  return (
+  return !props.random || logoVisibility ? (  // Only render image if the prop is not randomized or randomized to be visible
     <div className={
       props.className +
       " relative" +
@@ -24,11 +34,7 @@ const Sponsor = (props: Props) => {
           object-contain
         " />
     </div>
-  )
+  ) : null
 }
-
-// h-full
-// handheld:max-h-44
-// mobile:max-h-32
 
 export default Sponsor
