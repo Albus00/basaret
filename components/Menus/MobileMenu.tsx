@@ -35,7 +35,7 @@ const MobileMenu = (props: Props) => {
           />
           <MenuItem
             title={"Nolleboken"}
-            redirect={"nolleboken"}
+            redirect={"nolleboken.pdf"}
             isMobile={true}
             setMenuIsOpen={props.setMenuIsOpen}
           />

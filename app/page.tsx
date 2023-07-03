@@ -17,6 +17,7 @@ export default function Page() {
         height={782}
         sizes="100vw"
         priority
+        unoptimized={true}    // Hidden gem setting
         alt="Basårsfaddrar"
         className='object-contain'
       />

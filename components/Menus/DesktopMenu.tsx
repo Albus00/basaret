@@ -3,7 +3,7 @@ import MenuItem from '../MenuItem'
 
 const DesktopMenu = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-end content-end space-x-10">
+    <div className="flex flex-row flex-wrap justify-end content-end space-x-10 pr-5">
       <MenuItem
         title={"Aktivitetsschema"}
         redirect={"aktivitet"}
@@ -18,7 +18,7 @@ const DesktopMenu = () => {
       />
       <MenuItem
         title={"Nolleboken"}
-        redirect={"nolleboken"}
+        redirect={"nolleboken.pdf"}
         isMobile={false}
         setMenuIsOpen={() => undefined}
       />

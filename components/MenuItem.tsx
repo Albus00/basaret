@@ -20,10 +20,22 @@ const MenuItem = (props: Props) => {
       !props.isMobile ?
         (defaultStyle + " " + hoverStyle + " menu_item_effect") :
         (defaultStyle)}>
-      <Link
-        href={props.redirect}
-        onClick={isMobile ? (() => props.setMenuIsOpen(false)) : (() => undefined)}   // Call function to close the navmenu if on mobile
-      >{props.title}</Link>
+
+      {/* If on mobile and the link leads to a pdf (ak. "nolleboken.pdf") the website should download the file, since showing it does not work */}
+      {props.isMobile && props.redirect.includes(".pdf") ? (
+        <a
+          href={"/"}
+          download
+          onClick={isMobile ? (() => props.setMenuIsOpen(false)) : (() => undefined)}   // Call function to close the navmenu if on mobile
+        >{props.title}</a>
+      ) :
+        (
+          <Link
+            href={props.redirect}
+            onClick={isMobile ? (() => props.setMenuIsOpen(false)) : (() => undefined)}   // Call function to close the navmenu if on mobile
+          >{props.title}</Link>
+        )}
+
     </div >
   )
 }
