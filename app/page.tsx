@@ -48,7 +48,7 @@ export default function Page() {
         </p>
         <TextButton
           title="Glöm inte att fylla i nolle-enkäten!"
-          url="https://docs.google.com/forms/d/e/1FAIpQLSfZDkA28xAoCHObyb-qLweAkRcDjCUlYVQLFcFU-TnLo2p8tg/viewform" />
+          url="https://forms.gle/wUThKNrecHkqgZcU8" />
         <InstagramButton
           title1="Följ oss på Instagram"
           title2="&nbsp;för fler uppdateringar!" // Non breaking space had to be used because regular space was ignored by HTML
