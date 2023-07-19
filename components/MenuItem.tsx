@@ -24,7 +24,7 @@ const MenuItem = (props: Props) => {
       {/* If on mobile and the link leads to a pdf (ak. "nolleboken.pdf") the website should download the file, since showing it does not work */}
       {props.isMobile && props.redirect.includes(".pdf") ? (
         <a
-          href={"/"}
+          href={props.redirect}
           download
           onClick={isMobile ? (() => props.setMenuIsOpen(false)) : (() => undefined)}   // Call function to close the navmenu if on mobile
         >{props.title}</a>
