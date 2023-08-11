@@ -29,7 +29,7 @@ const MobileMenu = (props: Props) => {
           />
           <MenuItem
             title={"Schema Basår"}
-            redirect={"https://cloud.timeedit.net/liu/web/schema/ri167XQQ597Z50Qm37070gZ6y5Y7700Q6Y93Y7.html"}
+            redirect={"https://cloud.timeedit.net/liu/web/schema/ri167XQQ698Z50Qm37070gZ6y5Y7505Q6Y95Y7.html"}
             isMobile={true}
             setMenuIsOpen={props.setMenuIsOpen}
           />
