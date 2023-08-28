@@ -56,7 +56,7 @@ export const schedule = [
       {
         header: "Pluggstuga/Häng",
         time: "15:15-18:00",
-        location: "Hemklassrum",
+        location: "TP42",
         alcohol: false,
         description: "Nollan kan få hjälp med sina studier och ställa frågor till erfarna faddrar. Även ett tillfälle för Nollan att ladda upp inför..."
       },
