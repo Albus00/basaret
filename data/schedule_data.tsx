@@ -85,7 +85,7 @@ export const schedule = [
       {
         header: "Pluggstuga",
         time: "17:30-20:00",
-        location: "Hemklassrum",
+        location: "TP42",
         alcohol: false,
         description: "Nollan kan få hjälp med sina studier och ställa frågor till erfarna faddrar"
       }
