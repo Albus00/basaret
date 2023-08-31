@@ -1,8 +1,8 @@
-import React from 'react'
+'use client'
+
 import ActivityContainer from './ActivityContainer';
 
 type Props = {
-  currentDate: string;
   date: string;
   weekday: string;
   color: string;
@@ -10,9 +10,12 @@ type Props = {
 }
 
 function DayContainer(props: Props) {
+  const today = new Date();
+
+
   // Split the dates into day and month (from [DAY]/[MONTH] format)
-  const currentDay = Number(props.currentDate.split('/')[0]);
-  const currentMonth = Number(props.currentDate.split('/')[1]);
+  const currentDay = today.getDate();
+  const currentMonth = (today.getMonth() + 1);
   const activityDay = Number(props.date.split('/')[0]);
   const activityMonth = Number(props.date.split('/')[1]);
 

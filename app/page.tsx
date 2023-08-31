@@ -63,14 +63,14 @@ export default function Page() {
         handheld:flex-col handheld:space-y-24
         '>
           <ContactCard
-            name='Josephine Zettervall'
-            phone='0725286711'
-            email='josze195@student.liu.se'
-            program='Medieteknik' />
-          <ContactCard
             name='Amanda Hult'
             phone='072-749 18 00'
             email='amahu396@student.liu.se'
+            program='Medieteknik' />
+          <ContactCard
+            name='Josephine Zettervall'
+            phone='0725286711'
+            email='josze195@student.liu.se'
             program='Medieteknik' />
         </div>
       </div>
@@ -83,14 +83,14 @@ export default function Page() {
         handheld:flex-col handheld:space-y-24
         '>
           <ContactCard
-            name='Gustaf Kronholm'
-            phone='072-399 40 07'
-            email='guskr150@student.liu.se'
-            program='Medieteknik' />
-          <ContactCard
             name='Albin Kjellberg'
             phone='072-246 68 12'
             email='albkj604@student.liu.se'
+            program='Medieteknik' />
+          <ContactCard
+            name='Gustaf Kronholm'
+            phone='072-399 40 07'
+            email='guskr150@student.liu.se'
             program='Medieteknik' />
         </div>
       </div>
