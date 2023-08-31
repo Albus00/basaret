@@ -120,7 +120,7 @@ export const schedule = [
       {
         header: "Pluggstuga och Norrköpingstips",
         time: "17:30-20:00",
-        location: "Hemklassrum",
+        location: "TP42",
         alcohol: false,
         description: "Nollan kan få hjälp med sina studier, ställa frågor till erfarna faddrar och få tips om vad man kan hitta på i Norrköping!"
       }
