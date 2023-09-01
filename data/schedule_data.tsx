@@ -134,9 +134,9 @@ export const schedule = [
       {
         header: "Basårskampen",
         time: "19:00-21:00",
-        location: "Mellan husen",
+        location: "DK",
         alcohol: true,
-        description: "Vi delar upp Nollan i flera grupper och har en runda på Himpan (se ordlistan) med aktiviter, tävlingar och annat kul!"
+        description: "Vi delar upp Nollan i flera grupper och har en runda på studentboendet DK (se ordlistan) med aktiviter, tävlingar och annat kul!"
       }
     ]
   },
