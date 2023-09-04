@@ -20,9 +20,10 @@ function DayContainer(props: Props) {
   const activityMonth = Number(props.date.split('/')[1]);
 
   // Don't render if day already has passed
-  if (currentMonth > activityMonth || (currentMonth == activityMonth && currentDay > activityDay)) {
-    return null;
-  }
+  // Removed after nolle-p for demonstration purposes and because it looked bad with a empty page :)
+  // if (currentMonth > activityMonth || (currentMonth == activityMonth && currentDay > activityDay)) {
+  //   return null;
+  // }
 
   return (
     <div className='
